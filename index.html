@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IQ Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Test de QI</h1>
+    <div id="question1" class="question">
+      <p>Si 5 machines produisent 5 articles en 5 minutes, combien de temps (en minutes) faudrait-il à 100 machines pour en fabriquer 100 ?</p>
+      <input type="text" id="question1input">
+      <button id="submit1" onclick="checkAnswer(1)">Submit</button>
+      <button id="next1" onclick="nextQuestion(1)" style="display:none">Next</button>
+      <p id="result1"></p>
+    </div>
+    <div id="question2" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : 4, 6, 15, 105, ... ?</p>
+      <input type="text" id="question2input">
+      <button id="submit2" onclick="checkAnswer(2)">Submit</button>
+      <button id="next2" onclick="nextQuestion(2)" style="display:none">Next</button>
+      <p id="result2"></p>
+    </div>
+    <div id="question3" class="question" style="display: none;">
+      <p>3 mégots de cigarettes peuvent être recyclés en une cigarette entière. Si un homme a 9 mégots de cigarettes, combien de cigarettes entières peut-il faire avec ?</p>
+      <input type="text" id="question3input">
+      <button id="submit3" onclick="checkAnswer(3)">Submit</button>
+      <button id="next3" onclick="nextQuestion(3)" style="display:none">Next</button>
+      <p id="result3"></p>
+    </div>
+    <div id="question4" class="question" style="display: none;">
+      <p>Plus je suis vieille, plus je suis petite. Le souffle du vent est mon ennemi. Qui suis-je ? (Mettre directement le mot en minuscule sans déterminant)</p>
+      <input type="text" id="question4input">
+      <button id="submit4" onclick="checkAnswer(4)">Submit</button>
+      <button id="next4" onclick="nextQuestion(4)" style="display:none">Next</button>
+      <p id="result4"></p>
+    </div>
+    <div id="question5" class="question" style="display: none;">
+      <p>stylo = 2, feutre = 3, pinceau = 4, crayon = ?</p>
+      <input type="text" id="question5input">
+      <button id="submit5" onclick="checkAnswer(5)">Submit</button>
+      <button id="next5" onclick="nextQuestion(5)" style="display:none">Next</button>
+      <p id="result5"></p>
+    </div>
+    <div id="question6" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : 1, 1, 2, 6, 24, 120, 720, ... ?</p>
+      <input type="text" id="question6input">
+      <button id="submit6" onclick="checkAnswer(6)">Submit</button>
+      <button id="next6" onclick="nextQuestion(6)" style="display:none">Next</button>
+      <p id="result6"></p>
+    </div>
+    <div id="question7" class="question" style="display: none;">
+      <p>Combien vaut l'addition de tous les chiffres de 1 à 100?</p>
+      <input type="text" id="question7input">
+      <button id="submit7" onclick="checkAnswer(7)">Submit</button>
+      <button id="next7" onclick="nextQuestion(7)" style="display:none">Next</button>
+      <p id="result7"></p>
+    </div>
+    <div id="question8" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : 0, 10, 1110, 3110, 132110, 13123110, ... ?</p>
+      <input type="text" id="question8input">
+      <button id="submit8" onclick="checkAnswer(8)">Submit</button>
+      <button id="next8" onclick="nextQuestion(8)" style="display:none">Next</button>
+      <p id="result8"></p>
+    </div>
+    <div id="question9" class="question" style="display: none;">
+      <p>Complétez les lettres manquantes : K H P E R P Q I B _ _ _ (Rentrer 3 lettres en majuscule et attachées)</p>
+      <input type="text" id="question9input">
+      <button id="submit9" onclick="checkAnswer(9)">Submit</button>
+      <button id="next9" onclick="nextQuestion(9)" style="display:none">Next</button>
+      <p id="result9"></p>
+    </div>
+    <div id="question10" class="question" style="display: none;">
+      <p>Vous êtes enfermé dans une pièce dont les quatre murs, le plancher et le plafond sont complètement recouverts de miroirs. Il n'y a rien d'autre dans la pièce. Combien de réflexions de vous-même voyez-vous dans les miroirs ?</p>
+      <input type="text" id="question10input">
+      <button id="submit10" onclick="checkAnswer(10)">Submit</button>
+      <button id="next10" onclick="nextQuestion(10)" style="display:none">Next</button>
+      <p id="result10"></p>
+    </div>
+    <div id="question11" class="question" style="display: none;">
+      <p>Parmis les nombres de 1 à 60, quel nombre ne peut-on pas obtenir en faisant des additions à partir des nombres suivants : 0, 1, 2, 4, 7, 15 et 31 ? (chaque nombre ne peut être utilisé qu'une seule fois)</p>
+      <input type="text" id="question11input">
+      <button id="submit11" onclick="checkAnswer(11)">Submit</button>
+      <button id="next11" onclick="nextQuestion(11)" style="display:none">Next</button>
+      <p id="result11"></p>
+    </div>
+    <div id="question12" class="question" style="display: none;">
+      <p>Un type de souris peut mettre au monde une portée de 12 souriceaux une fois par mois. Un souriceau peut procréer au bout de 2 mois. Si vous achetez un de ces souriceaux, combien de souris aurait vous en 10 mois ?</p>
+      <input type="text" id="question12input">
+      <button id="submit12" onclick="checkAnswer(12)">Submit</button>
+      <button id="next12" onclick="nextQuestion(12)" style="display:none">Next</button>
+      <p id="result12"></p>
+    </div>
+    <div id="question13" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : 1, 2, 4, 6, 3, 5, ... ?</p>
+      <input type="text" id="question13input">
+      <button id="submit13" onclick="checkAnswer(13)">Submit</button>
+      <button id="next13" onclick="nextQuestion(13)" style="display:none">Next</button>
+      <p id="result13"></p>
+    </div>
+    <div id="question14" class="question" style="display: none;">
+      <p>Un escargot est au fond d’un puit qui mesure 12 mètres de hauteur. Il veut en sortir et grimpe de 3 mètres chaque jour, mais il s’arrête la nuit pour se reposer et glisse de deux mètres. Combien lui faut-il de jours pour sortir du puits ?</p>
+      <input type="text" id="question14input">
+      <button id="submit14" onclick="checkAnswer(14)">Submit</button>
+      <button id="next14" onclick="nextQuestion(14)" style="display:none">Next</button>
+      <p id="result14"></p>
+    </div>
+    <div id="question15" class="question" style="display: none;">
+      <p>Mattéo a vécu un quart de sa vie a Paris, un cinquième de sa vie a Marseille, un tiers de sa vie a Monaco et termina les 13 ans de sa vie a Dubai. A quel âge Mattéo est-il mort ?</p>
+      <input type="text" id="question15input">
+      <button id="submit15" onclick="checkAnswer(15)">Submit</button>
+      <button id="next15" onclick="nextQuestion(15)" style="display:none">Next</button>
+      <p id="result15"></p>
+    </div>
+    <div id="question16" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : A3, E4, F3, H3, M4, T... ?</p>
+      <input type="text" id="question16input">
+      <button id="submit16" onclick="checkAnswer(16)">Submit</button>
+      <button id="next16" onclick="nextQuestion(16)" style="display:none">Next</button>
+      <p id="result16"></p>
+    </div>
+    <div id="question17" class="question" style="display: none;">
+      <p>1=1, 2=5, 3=16, 4=48, 5=?</p>
+      <input type="text" id="question17input">
+      <button id="submit17" onclick="checkAnswer(17)">Submit</button>
+      <button id="next17" onclick="nextQuestion(17)" style="display:none">Next</button>
+      <p id="result17"></p>
+    </div>
+    <div id="question18" class="question" style="display: none;">
+      <p>Onze billes numérotées et d'apparence identique sont sur une même ligne. Parmi elles, il y en a trois placées côte à côte, de même poids mais plus lourdes que les huit autres. Avec une balance à deux plateaux, combien de pesées au minimum sont nécessaires pour déterminer les intruses ? (sans considérer les coups de chance)</p>
+      <input type="text" id="question18input">
+      <button id="submit18" onclick="checkAnswer(18)">Submit</button>
+      <button id="next18" onclick="nextQuestion(18)" style="display:none">Next</button>
+      <p id="result18"></p>
+    </div>
+    <div id="question19" class="question" style="display: none;">
+      <p>Edgar a un nombre d'argent sur lui. Faustine lui donne la moitié de l'argent qu'elle a sur elle, et Edgar se retrouve avec 2 fois plus d'argent. Faustine reçoit ensuite 1,5 fois l'argent qu'elle a maintenant de la part d'Émilien, qui en a maintenant autant qu'elle. Combien de fois plus d'argent qu'Edgar Émilien avait-il donc au début ?</p>
+      <input type="text" id="question19input">
+      <button id="submit19" onclick="checkAnswer(19)">Submit</button>
+      <button id="next19" onclick="nextQuestion(19)" style="display:none">Next</button>
+      <p id="result19"></p>
+    </div>
+    <div id="question20" class="question" style="display: none;">
+      <p>Quel est le nombre manquant dans cette liste : 1, 2, 4, 8, 16, 31 ... ?</p>
+      <input type="text" id="question20input">
+      <button id="submit20" onclick="checkAnswer(20)">Submit</button>
+      <button id="next20" onclick="nextQuestion(20)" style="display:none">Next</button>
+      <p id="result20"></p>
+    </div>
+    <p id="finalResult" style="display:none"></p>
+    <button id="next1" onclick="nextQuestion(1)" style="display:none">Next</button>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
